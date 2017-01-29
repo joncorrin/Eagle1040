@@ -1,0 +1,21 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+.navbar-default {
+  background-color: #blue;
+  .btn-link {
+    color: #ffffff;
+    font-weight: bold;
+  }
+  .btn-link:hover {
+    text-decoration: none !important;
+  }
+}
+
+#logo {
+}
+
+#copyright {
+  text-align: center;
+}
