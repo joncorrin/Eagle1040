@@ -1,2 +1,125 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<!-- Carousel
+================================================== -->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="overlay">
+      <div class="carousel-caption">
+        <div class="english">
+          <%= button_to "GET A QUOTE", "#", class:"btn btn-success btn-lg" %>
+        </div>
+        <div class="spanish">
+          <%= button_to "Cotización", "#", class:"btn btn-success btn-lg" %>
+        </div>
+      </div>
+    </div>
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img class="first-slide" alt="First slide">
+        <div class="container">
+        </div>
+      </div>
+      <div class="item">
+        <img class="second-slide" alt="Second slide">
+        <div class="container">
+        </div>
+      </div>
+      <div class="item">
+        <img class="third-slide" alt="Third slide">
+        <div class="container">
+        </div>
+      </div>
+    </div>
+  </div><!-- /.carousel -->
+
+<!--Features and marketing calls--------------------->
+<div class="english">
+    <div class="container marketing">
+      <div class="row">
+        <div class="col-lg-4">
+          <span class="fa-stack fa-5x" aria-hidden="true">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+          </span>
+          <h2>Homeowner's and Renter's Insurance</h2>
+          <p>English paragraph English paragraph English paragraph English paragraph
+             English paragraph English paragraph English paragraph English paragraph English paragraph English paragraph.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <span class="fa-stack fa-5x" aria-hidden="true">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-car fa-stack-1x fa-inverse"></i>
+          </span>
+          <h2>Auto, Motorcycle, Truck and RV Insurance</h2>
+          <p>English paragraph English paragraph English paragraph English paragraph
+             English paragraph English paragraph English paragraph English paragraph English paragraph
+             English paragraph English paragraph English paragraph</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <span class="fa-stack fa-5x" aria-hidden="true">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-users fa-stack-1x fa-inverse"></i>
+          </span>
+          <h2>Life, Health, and Supplemental Insurance</h2>
+          <p>English paragraph English paragraph English paragraph English paragraph
+             English paragraph English paragraph English paragraph English paragraph
+             English paragraph English paragraph English paragraph English paragraph English paragraph English paragraph</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="colored-featurette">
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">First off, our team. <span class="text-muted">We'll blow your mind.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.
+                          Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5">
+          <%= image_tag "working.jpg", class:"featurette-image img-responsive center-block", alt:"People working" %>
+        </div>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">Oh yeah, we're friendly. <span class="text-muted">See for yourself.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.
+                          Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <%= image_tag "service.jpg", class:"featurette-image img-responsive center-block", alt:"Customer service" %>
+        </div>
+      </div>
+
+    <hr class="featurette-divider">
+    <div class="colored-featurette">
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Get a quote so easily. <span class="text-muted">Checkmate.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.
+                          Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5">
+          <%= image_tag "customer.jpg", class:"featurette-image img-responsive center-block", alt:"Customer" %>
+        </div>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+  </div><!-- /.container -->
+</div>
+<%= render 'layouts/homespanish' %>

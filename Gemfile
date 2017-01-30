@@ -38,6 +38,9 @@ gem 'jbuilder', '~> 2.5'
 # For SCSS styling and editing
 gem 'bootstrap-sass'
 
+# For cool fonts and icons
+gem "font-awesome-rails"
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

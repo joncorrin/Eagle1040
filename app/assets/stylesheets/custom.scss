@@ -1,21 +1,165 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome";
 
+/* header
+----------------------------*/
+#logoTitle {
+  height: auto;
+  width: auto;
+}
 
-.navbar-default {
-  background-color: #blue;
-  .btn-link {
-    color: #ffffff;
+/*navbar
+------------------------- */
+.navbar {
+  background-color: #efefef;
+  font-size: 16px;
+  height: 55px !important;
+  a {
+    font-weight: bold;
+    color: #333 !important;
+  }
+  .btn {
+    margin-top: 4px !important;
+    height: 45px !important;
     font-weight: bold;
   }
-  .btn-link:hover {
-    text-decoration: none !important;
+  .navbar-brand {
+    color: #fff !important;
+    font-size: 35px !important;
+    font-weight: bold !important;
+    font-family: 'Hobo std' !important;
+    text-shadow: 2px 0 0 #a9daf5, -2px 0 0 #a9daf5, 0 2px 0 #a9daf5, 1px 1px #a9daf5,
+                -1px -1px 0 #a9daf5, 1px -1px 0 #a9daf5, -1px 1px 0 #a9daf5 !important;
+  }
+  .calldigits {
+    color: #5cb85c !important;
+    font-size: 26px !important;
+    font-weight: bold !important;
+    font-family: 'Hobo std' !important;
+    text-decoration: underline;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 1px 1px #fff,
+                -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff !important;
+     :hover {
+       color: #5cb85 !important;
+     }
   }
 }
 
-#logo {
+.translator {
+  background-color: #fff !important;
+  margin-top: 13px !important;
 }
 
+
+/* body
+------------------------- */
+body {
+  font-family: 'Rubik', sans-serif;
+  padding-bottom: 40px;
+}
+.spanish {
+  display: none;
+}
+
+/* Carousel base class
+-------------------------------------------------- */
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #080d15;
+    opacity: .7;
+    margin-bottom: 10px !important;
+    .btn {
+      opacity: .95 !important;
+    }
+}
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+
+.first-slide {
+  background: url("home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.second-slide {
+  background: url("auto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.third-slide {
+  background: url("rv.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+
+/* Footer
+------------------------- */
 #copyright {
   text-align: center;
 }
