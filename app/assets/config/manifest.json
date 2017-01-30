@@ -1,0 +1,36 @@
+{
+  "name": "A to Z Insurance Agency",
+  "short_name": "A to Z",
+  "lang": "en-US",
+  "start_url": "https://eagle1040.herokuapp.com/",
+  "display": "standalone",
+  "theme_color": "#efefef",
+  "icons": [
+    {
+      "src": "https://s3-us-west-2.amazonaws.com/joncorrin/logo-small.png",
+      "sizes": "192x192",
+      "type": "png"
+    },
+    {
+      "src": "https://s3-us-west-2.amazonaws.com/joncorrin/logo-small.png",
+      "sizes": "80x80",
+      "type": "png"
+    },
+    {
+      "src": "https://s3-us-west-2.amazonaws.com/joncorrin/logo-small.png",
+      "sizes": "40x40",
+      "type": "png"
+    },
+    {
+      "src": "https://s3-us-west-2.amazonaws.com/joncorrin/logo-small.png",
+      "sizes": "120x120",
+      "type": "png"
+    },
+    {
+      "src": "https://s3-us-west-2.amazonaws.com/joncorrin/logo-small.png",
+      "sizes": "10x10",
+      "type": "png"
+    }
+  ],
+  "background_color": "#efefef"
+}
