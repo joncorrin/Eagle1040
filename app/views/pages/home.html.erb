@@ -1,16 +1,20 @@
 <!-- Carousel
 ================================================== -->
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <div class="overlay">
-      <div class="carousel-caption">
+      <div class="carousel-caption" style="margin-bottom: 100px;">
         <div class="english">
-          <%= button_to "GET A QUOTE", "#", class:"btn btn-success btn-lg" %>
+          <h1><strong>Life start with A to Z</strong></h1>
+          <h3>Click for a quote now!</h3>
+          <%= button_to "QUOTE", "#", class:"btn btn-success btn-lg" %>
         </div>
         <div class="spanish">
+          <h1><strong>La vida comienza con A to Z</strong></h1>
+          <h3>Haga clic para una cita ahora!</h3>
           <%= button_to "Cotización", "#", class:"btn btn-success btn-lg" %>
         </div>
       </div>
-    </div>
+      <div class="overlay">
+      </div>
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
